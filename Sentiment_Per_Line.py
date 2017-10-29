@@ -90,10 +90,14 @@ def entry_form():
             if not os.path.isfile(lines.replace('.csv',str(i) + 'Vader.csv')):
                 out_file = lines.replace('.csv',str(i) + 'Vader.csv')
                 break
+            if not os.path.isfile(lines.replace('.txt',str(i) + 'Vader.csv')):
+                out_file = lines.replace('.txt',str(i) + 'Vader.csv')
+                break
             i+=1
         fout = open(out_file, 'w')   
         with open(lines) as f:
             for line in f:
+                line = line.replace(',','')
                 vs = analyzer.polarity_scores(line)
                 fout.write(line.replace('\n','') + ',' + str(vs['compound']) + '\n')
         fout.close()
