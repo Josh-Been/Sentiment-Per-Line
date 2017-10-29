@@ -9,6 +9,7 @@ VADER (Valence Aware Dictionary and sEntiment Reasoner)
 This application will create a comma delimited spreadsheet in the same directory as the selected settings file. The spreadsheet will repeat each line in the first column and write the assigned composite sentiment in the second column.
 
 __Steps__
+
 (1) Ensure Python 2.7 is installed on your computer. The advised package is Anaconda Python, available here https://www.anaconda.com/download
 
 (2) Ensure that you have the proper Python libraries to run the application. This requires the standard Python libraries provided by the Anaconda2 distribution, as well as the PIL (https://anaconda.org/anaconda/pil) and VaderSentiment libraries (pip install vaderSentiment).\n')
