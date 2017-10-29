@@ -25,3 +25,12 @@ __Steps__
  Dependencies not included in Anaconda2: VaderSentiment, PIL
  Additional dependencies: Tkinter, operator, string, webbrowser, os, subprocess
 
+__Setup Instructions for Those New to Python__
+
+(1) First, download the script repository. Click the green 'Clone or Download' button and select 'Download Zip.' Extract the .zip contents.
+
+(1) Second is to install Python. Install Anaconda Python 2.7 from https://www.anaconda.com/download/
+
+(2) Third is to add any additional Python libraries the script requires using the command line. On a Mac, open Terminal (CMD-Space and type terminal and enter). On a PC, launch 'Anaconda Prompt' from the Anaconda2 application directory. Type three words: pip install _name of library_. If Tweepy needed installation, for example, type: pip install Tweepy. Do this for each additional library required by the script. This permanently installs these libraries onto your computer, so you will not need to reinstall these libraries a second time.
+
+(3) Fourth and finally is to run the script using Anaconda Spyder. Launch the Anaconda Navigator application, which is a menu of applications included within Anaconda, and then launch Spyder. File/Open and browse to the .py Python script downloaded in step 1. Press the green 'Run File' button (or click F5). If you do not see anything happening, check the monimized windows for the application.
