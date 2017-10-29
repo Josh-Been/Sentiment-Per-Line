@@ -12,7 +12,7 @@
 #(3) Click the Browse for Text File to Run Vader Sentiment button.
 #(4) This will create a comma delimited spreadsheet in the same directory as the selected settings file.
 # 
-# Licensed under GPL, version 3.0
+# Licensed under the MIT License
 # Under production
 # 
 # Developed using Python Anaconda2, 64 bit
