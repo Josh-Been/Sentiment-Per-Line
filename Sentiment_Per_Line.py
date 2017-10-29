@@ -113,7 +113,7 @@ def entry_form():
             except:
                 txtSelected.set('! Problem Processing !')
             
-    Button(root, text='Browse for Text File to Process Vader', fg='blue', command=callback).pack(fill=X)
+    Button(root, text='Browse for Text File to Process Sentiment', fg='blue', command=callback).pack(fill=X)
     txtSelected = StringVar()
     Label(root, textvariable=txtSelected, fg='white', bg='black').pack()
     txtSelected.set('Idle...')
