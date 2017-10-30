@@ -103,7 +103,7 @@ def entry_form():
         fout.close()
         
     def callback():
-        txt_file = askopenfilename()
+        txt_file = askopenfilename(defaultextension='.txt', filetypes=(('text', '*.txt'),('comma separated', '*.csv')))
         if txt_file != '':
             try:
                 txtSelected.set('Processing')
@@ -113,7 +113,7 @@ def entry_form():
             except:
                 txtSelected.set('! Problem Processing !')
             
-    Button(root, text='Browse for Text File to Process Sentiment', fg='blue', command=callback).pack(fill=X)
+    Button(root, text='Browse for Text File (.txt) to Process Sentiment', fg='blue', command=callback).pack(fill=X)
     txtSelected = StringVar()
     Label(root, textvariable=txtSelected, fg='white', bg='black').pack()
     txtSelected.set('Idle...')
